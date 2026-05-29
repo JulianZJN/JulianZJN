@@ -1,0 +1,66 @@
+<svg width="1200" height="500" viewBox="0 0 1200 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering maxims</title>
+  <desc id="desc">Four programmer quotes in a terminal themed panel.</desc>
+  <defs>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF"/>
+      <stop offset="0.5" stop-color="#3FB950"/>
+      <stop offset="1" stop-color="#F78166"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#30363D" stroke-width="0.7" opacity="0.5"/>
+    </pattern>
+    <filter id="shadow" x="-8%" y="-12%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="500" rx="24" fill="#0D1117"/>
+  <rect width="1200" height="500" rx="24" fill="url(#grid)" opacity="0.45"/>
+  <rect x="22" y="22" width="1156" height="456" rx="18" fill="#010409" stroke="#30363D"/>
+  <rect x="22" y="22" width="1156" height="44" rx="18" fill="#161B22"/>
+  <path d="M22 66H1178" stroke="#30363D"/>
+  <circle cx="48" cy="44" r="6" fill="#F85149"/>
+  <circle cx="70" cy="44" r="6" fill="#D29922"/>
+  <circle cx="92" cy="44" r="6" fill="#3FB950"/>
+  <text x="116" y="49" fill="#8B949E" font-family="monospace" font-size="13">engineering/maxims.md</text>
+
+  <text x="60" y="110" fill="#58A6FF" font-family="monospace" font-size="17"># maxims that survive code review</text>
+  <path d="M60 132H1140" stroke="url(#stroke)" stroke-width="2"/>
+
+  <g filter="url(#shadow)" font-family="monospace">
+    <g transform="translate(60 162)">
+      <rect width="515" height="118" rx="14" fill="#0D1117" stroke="#30363D"/>
+      <text x="24" y="34" fill="#8B949E" font-size="13">01 / Linus Torvalds</text>
+      <text x="24" y="70" fill="#C9D1D9" font-size="24" font-weight="700">"Talk is cheap.</text>
+      <text x="24" y="100" fill="#C9D1D9" font-size="24" font-weight="700">Show me the code."</text>
+      <circle cx="478" cy="35" r="6" fill="#58A6FF"/>
+    </g>
+
+    <g transform="translate(625 162)">
+      <rect width="515" height="118" rx="14" fill="#0D1117" stroke="#30363D"/>
+      <text x="24" y="34" fill="#8B949E" font-size="13">02 / Abelson, Sussman, Sussman</text>
+      <text x="24" y="58" fill="#C9D1D9" font-size="17" font-weight="700">"Programs must be written for people to read,</text>
+      <text x="24" y="82" fill="#C9D1D9" font-size="17" font-weight="700">and only incidentally for machines</text>
+      <text x="24" y="106" fill="#C9D1D9" font-size="17" font-weight="700">to execute."</text>
+      <circle cx="478" cy="35" r="6" fill="#3FB950"/>
+    </g>
+
+    <g transform="translate(60 320)">
+      <rect width="515" height="118" rx="14" fill="#0D1117" stroke="#30363D"/>
+      <text x="24" y="34" fill="#8B949E" font-size="13">03 / Edsger W. Dijkstra</text>
+      <text x="24" y="58" fill="#C9D1D9" font-size="17" font-weight="700">"Program testing can be used to show</text>
+      <text x="24" y="82" fill="#C9D1D9" font-size="17" font-weight="700">the presence of bugs, but never</text>
+      <text x="24" y="106" fill="#C9D1D9" font-size="17" font-weight="700">to show their absence!"</text>
+      <circle cx="478" cy="35" r="6" fill="#F78166"/>
+    </g>
+
+    <g transform="translate(625 320)">
+      <rect width="515" height="118" rx="14" fill="#0D1117" stroke="#30363D"/>
+      <text x="24" y="34" fill="#8B949E" font-size="13">04 / Knuth, after Hoare</text>
+      <text x="24" y="70" fill="#C9D1D9" font-size="23" font-weight="700">"Premature optimization</text>
+      <text x="24" y="100" fill="#C9D1D9" font-size="23" font-weight="700">is the root of all evil."</text>
+      <circle cx="478" cy="35" r="6" fill="#D29922"/>
+    </g>
+  </g>
+</svg>

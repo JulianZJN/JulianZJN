@@ -7,8 +7,9 @@ This folder is a ready-to-publish GitHub profile README for `JulianZJN`.
 1. Create a public repository named exactly `JulianZJN`.
 2. Put these files in that repository:
    - `README.md`
+   - `assets/hero-panel.svg`
    - `assets/simpleicons-row.svg`
-   - `assets/musing-card.svg`
+   - `assets/quote-observatory.svg`
    - `.github/workflows/snake.yml`
 3. Commit and push to `main`.
 4. Open the repository's **Actions** tab and run **Generate contribution snake** once.
@@ -16,10 +17,10 @@ This folder is a ready-to-publish GitHub profile README for `JulianZJN`.
 
 ## Optional polish
 
-- Replace the `About Me` table with your real school, research direction, projects, and hobbies.
+- Replace the `./profile --inspect` table with your real school, research direction, projects, and habits.
 - Edit the `readme-typing-svg` lines in `README.md`.
 - Update the `skillicons.dev` icon list to match your real stack.
-- Replace `assets/musing-card.svg` with a theorem, quote, or project motto that feels more personal.
+- Replace `assets/quote-observatory.svg` with quotes or engineering rules that feel more personal.
 
 ## Local publish commands
 

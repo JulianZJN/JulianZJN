@@ -1,0 +1,124 @@
+<svg width="1200" height="430" viewBox="0 0 1200 430" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">JulianZJN developer workspace hero</title>
+  <desc id="desc">A dark code editor and terminal themed GitHub profile hero.</desc>
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="1200" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1117"/>
+      <stop offset="0.52" stop-color="#101823"/>
+      <stop offset="1" stop-color="#0A0F18"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#58A6FF"/>
+      <stop offset="0.48" stop-color="#3FB950"/>
+      <stop offset="1" stop-color="#F78166"/>
+    </linearGradient>
+    <filter id="shadow" x="-6%" y="-10%" width="112%" height="122%">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#30363D" opacity="0.7"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="430" rx="28" fill="url(#screen)"/>
+  <rect width="1200" height="430" rx="28" fill="url(#dots)" opacity="0.45"/>
+  <rect x="22" y="22" width="1156" height="386" rx="18" fill="#0D1117" stroke="#30363D" filter="url(#shadow)"/>
+  <rect x="22" y="22" width="1156" height="42" rx="18" fill="#161B22"/>
+  <path d="M22 64H1178" stroke="#30363D"/>
+  <circle cx="48" cy="43" r="6" fill="#F85149"/>
+  <circle cx="70" cy="43" r="6" fill="#D29922"/>
+  <circle cx="92" cy="43" r="6" fill="#3FB950"/>
+  <text x="580" y="48" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="13">JulianZJN / workspace.code-profile</text>
+
+  <rect x="22" y="64" width="212" height="344" fill="#0D1117"/>
+  <path d="M234 64V408" stroke="#30363D"/>
+  <text x="46" y="96" fill="#8B949E" font-family="monospace" font-size="13">EXPLORER</text>
+  <text x="46" y="128" fill="#C9D1D9" font-family="monospace" font-size="14">~/JulianZJN</text>
+  <text x="58" y="160" fill="#8B949E" font-family="monospace" font-size="14">agents/</text>
+  <text x="58" y="188" fill="#8B949E" font-family="monospace" font-size="14">retrieval/</text>
+  <text x="58" y="216" fill="#8B949E" font-family="monospace" font-size="14">notes/</text>
+  <text x="58" y="244" fill="#8B949E" font-family="monospace" font-size="14">tools/</text>
+  <text x="58" y="272" fill="#58A6FF" font-family="monospace" font-size="14">profile.ts</text>
+  <text x="58" y="300" fill="#8B949E" font-family="monospace" font-size="14">README.md</text>
+  <text x="58" y="328" fill="#8B949E" font-family="monospace" font-size="14">workflow.yml</text>
+
+  <rect x="234" y="64" width="568" height="344" fill="#0B1118"/>
+  <rect x="254" y="82" width="138" height="34" rx="8" fill="#1F6FEB" opacity="0.18" stroke="#1F6FEB"/>
+  <text x="276" y="104" fill="#C9D1D9" font-family="monospace" font-size="13">profile.ts</text>
+  <rect x="412" y="82" width="128" height="34" rx="8" fill="#161B22" stroke="#30363D"/>
+  <text x="434" y="104" fill="#8B949E" font-family="monospace" font-size="13">notes.md</text>
+
+  <g font-family="monospace" font-size="16">
+    <text x="274" y="152" fill="#484F58">01</text>
+    <text x="322" y="152" fill="#FF7B72">type</text>
+    <text x="368" y="152" fill="#D2A8FF">Focus</text>
+    <text x="430" y="152" fill="#C9D1D9">=</text>
+    <text x="452" y="152" fill="#A5D6FF">"AI systems"</text>
+    <text x="586" y="152" fill="#C9D1D9">|</text>
+    <text x="608" y="152" fill="#A5D6FF">"devtools"</text>
+    <text x="724" y="152" fill="#C9D1D9">;</text>
+
+    <text x="274" y="184" fill="#484F58">02</text>
+    <text x="322" y="184" fill="#FF7B72">const</text>
+    <text x="382" y="184" fill="#D2A8FF">profile</text>
+    <text x="462" y="184" fill="#C9D1D9">=</text>
+    <text x="486" y="184" fill="#C9D1D9">{</text>
+
+    <text x="274" y="216" fill="#484F58">03</text>
+    <text x="346" y="216" fill="#79C0FF">handle</text>
+    <text x="422" y="216" fill="#C9D1D9">:</text>
+    <text x="446" y="216" fill="#A5D6FF">"JulianZJN"</text>
+    <text x="566" y="216" fill="#C9D1D9">,</text>
+
+    <text x="274" y="248" fill="#484F58">04</text>
+    <text x="346" y="248" fill="#79C0FF">mode</text>
+    <text x="398" y="248" fill="#C9D1D9">:</text>
+    <text x="422" y="248" fill="#A5D6FF">"build &gt; brag"</text>
+    <text x="574" y="248" fill="#C9D1D9">,</text>
+
+    <text x="274" y="280" fill="#484F58">05</text>
+    <text x="346" y="280" fill="#79C0FF">loop</text>
+    <text x="398" y="280" fill="#C9D1D9">:</text>
+    <text x="422" y="280" fill="#C9D1D9">[</text>
+    <text x="442" y="280" fill="#A5D6FF">"read"</text>
+    <text x="506" y="280" fill="#C9D1D9">,</text>
+    <text x="526" y="280" fill="#A5D6FF">"debug"</text>
+    <text x="606" y="280" fill="#C9D1D9">,</text>
+    <text x="626" y="280" fill="#A5D6FF">"ship"</text>
+    <text x="690" y="280" fill="#C9D1D9">]</text>
+    <text x="710" y="280" fill="#C9D1D9">,</text>
+
+    <text x="274" y="312" fill="#484F58">06</text>
+    <text x="346" y="312" fill="#79C0FF">current</text>
+    <text x="422" y="312" fill="#C9D1D9">:</text>
+    <text x="446" y="312" fill="#A5D6FF">"knowledge -&gt; tools"</text>
+
+    <text x="274" y="344" fill="#484F58">07</text>
+    <text x="322" y="344" fill="#C9D1D9">};</text>
+  </g>
+
+  <rect x="802" y="64" width="376" height="344" fill="#010409"/>
+  <text x="828" y="100" fill="#8B949E" font-family="monospace" font-size="13">TERMINAL</text>
+  <g font-family="monospace" font-size="15">
+    <text x="828" y="140" fill="#3FB950">$</text>
+    <text x="850" y="140" fill="#C9D1D9">whoami</text>
+    <text x="828" y="170" fill="#58A6FF">JulianZJN</text>
+
+    <text x="828" y="214" fill="#3FB950">$</text>
+    <text x="850" y="214" fill="#C9D1D9">git status --short</text>
+    <text x="828" y="244" fill="#8B949E">clean tree, dirty ideas</text>
+
+    <text x="828" y="288" fill="#3FB950">$</text>
+    <text x="850" y="288" fill="#C9D1D9">npm run ship</text>
+    <text x="828" y="318" fill="#3FB950">PASS</text>
+    <text x="874" y="318" fill="#8B949E">logs inspected</text>
+    <text x="828" y="348" fill="#3FB950">PASS</text>
+    <text x="874" y="348" fill="#8B949E">readme rendered</text>
+  </g>
+  <rect x="22" y="383" width="1156" height="25" rx="0" fill="#0A3069"/>
+  <text x="46" y="400" fill="#C9D1D9" font-family="monospace" font-size="12">main</text>
+  <circle cx="104" cy="395" r="4" fill="#3FB950"/>
+  <text x="122" y="400" fill="#C9D1D9" font-family="monospace" font-size="12">build passing</text>
+  <text x="1016" y="400" fill="#C9D1D9" font-family="monospace" font-size="12">TS / Python / Git</text>
+  <rect x="22" y="22" width="1156" height="386" rx="18" stroke="url(#accent)" stroke-opacity="0.38"/>
+</svg>

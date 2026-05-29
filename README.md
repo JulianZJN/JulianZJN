@@ -1,14 +1,11 @@
 <div align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:6E56CF,55:2FB8A6,100:F2C94C&text=JulianZJN&fontColor=ffffff&fontSize=44&fontAlignY=36&desc=AI%20%7C%20Code%20%7C%20Knowledge%20Systems&descAlignY=58&animation=fadeIn"
-    alt="JulianZJN profile banner"
-  />
+  <img src="./assets/hero-panel.svg" width="100%" alt="JulianZJN developer workspace hero" />
 </div>
 
 <div align="center">
   <a href="https://git.io/typing-svg">
     <img
-      src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=6E56CF&center=true&vCenter=true&random=false&width=520&height=42&lines=Hi+there,+I+am+Julian.;Building+useful+tools+with+AI.;Learning,+shipping,+and+writing+things+down."
+      src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&pause=900&color=58A6FF&center=true&vCenter=true&random=false&width=760&height=38&lines=%24+build+small+tools+that+actually+run;%24+debug+with+logs,+tests,+and+evidence;%24+turn+knowledge+into+working+systems"
       alt="Typing SVG"
     />
   </a>
@@ -17,50 +14,57 @@
 <br>
 
 <div align="center">
-  <img src="./assets/simpleicons-row.svg" width="360" alt="Decorative row of simple icons" />
+  <img src="./assets/simpleicons-row.svg" width="100%" alt="Toolchain status bar" />
 </div>
 
-### About Me
+<br>
 
-<table align="center">
+### `./profile --inspect`
+
+<table>
   <tr>
-    <td>🎓</td>
-    <td>Student and builder working across AI, code, and knowledge systems.</td>
+    <td width="22%"><code>focus</code></td>
+    <td>AI systems, retrieval, developer tooling, automation, and knowledge workflows.</td>
   </tr>
   <tr>
-    <td>🌱</td>
-    <td>Learning AI systems, software engineering, automation, and knowledge tools.</td>
+    <td><code>style</code></td>
+    <td>Read the code, reproduce the state, inspect the logs, then change the smallest useful thing.</td>
   </tr>
   <tr>
-    <td>🧠</td>
-    <td>Interested in LLM agents, retrieval, developer tools, and practical productivity systems.</td>
+    <td><code>current()</code></td>
+    <td>Building practical systems that connect study, notes, code, and execution.</td>
   </tr>
   <tr>
-    <td>🛠️</td>
-    <td>I like turning scattered ideas into small, reliable tools.</td>
-  </tr>
-  <tr>
-    <td>✍️</td>
-    <td>Writing down experiments, lessons, and useful projects as I go.</td>
+    <td><code>principle</code></td>
+    <td>Less theater. More working software.</td>
   </tr>
 </table>
 
 <br>
 
-### Notes & Musings
+### `engineering/maxims.md`
 
 <div align="center">
-  <img src="./assets/musing-card.svg" width="680" alt="A note card about building useful systems" />
+  <img src="./assets/quote-observatory.svg" width="100%" alt="Programmer quotes from Linus Torvalds, SICP, Dijkstra, and Knuth" />
 </div>
+
+<details>
+  <summary>Quote sources</summary>
+
+  - Linus Torvalds: commonly cited from a [linux-kernel mailing list message](https://lkml.org/lkml/2000/8/25/132), 25 August 2000.
+  - Abelson, Sussman, and Sussman: cited by [MIT Libraries](https://libraries.mit.edu/150books/2011/05/11/1985/) from the preface of <em>Structure and Interpretation of Computer Programs</em>.
+  - Edsger W. Dijkstra: from the E.W. Dijkstra Archive, ["Structured Programming" (EWD268)](https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD268.html).
+  - Donald Knuth / C.A.R. Hoare: discussed by [ACM Ubiquity](https://ubiquity.acm.org/article.cfm?id=1147993) in context of premature optimization.
+</details>
 
 <br>
 
-### Tech Stack
+### `toolchain`
 
 <p align="center">
   <a href="https://skillicons.dev">
     <img
-      src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,tailwind,postgres,docker,git,githubactions,linux,vscode,bash,md&perline=5"
+      src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,nodejs,tailwind,postgres,docker,git,githubactions,linux,vscode,bash,md,pytorch&perline=8"
       alt="Tech stack icons"
     />
   </a>
@@ -68,14 +72,14 @@
 
 <br>
 
-### My GitHub
+### `github/telemetry`
 
 <div align="center">
   <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
     <img
-      width="680"
+      width="820"
       alt="JulianZJN GitHub profile details"
-      src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JulianZJN&theme=github"
+      src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=JulianZJN&theme=github_dark"
     />
   </a>
 </div>
@@ -87,21 +91,21 @@
     <img
       height="170"
       alt="JulianZJN repos per language"
-      src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JulianZJN&theme=github"
+      src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=JulianZJN&theme=github_dark"
     />
   </a>
   <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
     <img
       height="170"
       alt="JulianZJN GitHub stats summary"
-      src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JulianZJN&theme=github"
+      src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=JulianZJN&theme=github_dark"
     />
   </a>
 </div>
 
 <br>
 
-### Interesting Things
+### `contribution/trace`
 
 <div align="center">
   <picture>
@@ -114,5 +118,5 @@
 <br>
 
 <div align="center">
-  <sub>Designed to be simple, personal, and easy to keep fresh.</sub>
+  <sub><code>ship > polish > repeat</code></sub>
 </div>
