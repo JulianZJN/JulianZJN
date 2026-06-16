@@ -1,7 +1,5 @@
 # Junning Zhu
 
-Undergraduate student in Artificial Intelligence at BNU-HKBU United International College.
-
 Research interests: Federated Learning, Parameter-Efficient Fine-Tuning, Large Language Models, and Natural Language Processing.
 
 Email: t330025113@mail.bnbu.edu.cn
