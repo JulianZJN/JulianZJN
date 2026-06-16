@@ -5,7 +5,6 @@ Undergraduate student in Artificial Intelligence at BNU-HKBU United Internationa
 Research interests: Federated Learning, Parameter-Efficient Fine-Tuning, Large Language Models, and Natural Language Processing.
 
 Email: t330025113@mail.bnbu.edu.cn
-<img width="2117" height="1341" alt="image" src="https://github.com/user-attachments/assets/81a757f5-df59-4ee2-a953-9a7f4e5cbb79" />
 
 <div align="center">
   <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
