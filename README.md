@@ -1,8 +1,20 @@
-# Junning Zhu
+Interested in reliable, stateful AI systems: long-horizon agents, memory and state revision, multi-agent coordination, stateful LLM inference, and reproducible evaluation.
 
-Research interests: Federated Learning, Parameter-Efficient Fine-Tuning, Large Language Models, and Natural Language Processing.
+### Research interests
 
-Email: t330025113@mail.bnbu.edu.cn
+`Long-horizon agents` / `Agent memory` / `Stateful inference` / `Multi-agent systems` / `Reliable LLM systems`
+
+### Technical toolkit
+
+- **Programming:** Python, JavaScript / Node.js, SQL, Bash, LaTeX
+- **ML & LLM systems:** PyTorch, Hugging Face Transformers, vLLM, PEFT / LoRA, scikit-learn, NumPy, pandas, SciPy
+- **Agents & retrieval:** LangGraph, FAISS, Neo4j, PDF / OCR pipelines
+- **Research systems:** Linux, Git, Slurm, provenance tracking, exact-state replay, deterministic builds
+- **Evaluation:** held-out evaluation, causal intervention, strong-baseline design, bootstrap analysis, error analysis
+
+<br>
+
+### `github/telemetry`
 
 <div align="center">
   <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
