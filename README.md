@@ -1,17 +1,4 @@
 Interested in reliable, stateful AI systems: long-horizon agents, memory and state revision, multi-agent coordination, stateful LLM inference, and reproducible evaluation.
-
-### Research interests
-
-`Long-horizon agents` / `Agent memory` / `Stateful inference` / `Multi-agent systems` / `Reliable LLM systems`
-
-### Technical toolkit
-
-- **Programming:** Python, JavaScript / Node.js, SQL, Bash, LaTeX
-- **ML & LLM systems:** PyTorch, Hugging Face Transformers, vLLM, PEFT / LoRA, scikit-learn, NumPy, pandas, SciPy
-- **Agents & retrieval:** LangGraph, FAISS, Neo4j, PDF / OCR pipelines
-- **Research systems:** Linux, Git, Slurm, provenance tracking, exact-state replay, deterministic builds
-- **Evaluation:** held-out evaluation, causal intervention, strong-baseline design, bootstrap analysis, error analysis
-
 <br>
 
 ### `github/telemetry`
