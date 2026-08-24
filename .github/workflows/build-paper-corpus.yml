@@ -40,15 +40,16 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install requests pymupdf pymupdf4llm pillow pytesseract
 
-      - name: Decode frozen builder and manifest
+      - name: Decode frozen builder, manifest, and reports
         run: |
           base64 -d _paper_corpus_job/build_paper_corpus.py.gz.b64 | gunzip > build_paper_corpus.py
           base64 -d _paper_corpus_job/papers.json.gz.b64 | gunzip > papers.json
-          python -m py_compile build_paper_corpus.py
+          base64 -d _paper_corpus_job/postprocess_reports.py.gz.b64 | gunzip > postprocess_reports.py
+          python -m py_compile build_paper_corpus.py postprocess_reports.py
           python - <<'PY'
           import json
           p=json.load(open('papers.json'))
-          assert len(p)==30, len(p)
+          assert len(p)==32, len(p)
           print('papers:', len(p))
           PY
 
@@ -56,6 +57,27 @@ jobs:
         run: |
           set -o pipefail
           python build_paper_corpus.py 2>&1 | tee build.log
+
+      - name: Generate Chinese reports and repack
+        run: |
+          set -o pipefail
+          python postprocess_reports.py 2>&1 | tee -a build.log
+
+      - name: Print corpus statistics
+        if: always()
+        run: |
+          echo '--- AGGREGATE STATISTICS ---'
+          cat KVAF_Paper_Structure_Corpus_20260824/03_cross_paper_analysis/AGGREGATE_STATISTICS.json || true
+          echo '--- MANIFEST STATUS ---'
+          python - <<'PY'
+          import csv, pathlib, json
+          p=pathlib.Path('KVAF_Paper_Structure_Corpus_20260824/00_manifest/papers.csv')
+          if p.exists():
+              rows=list(csv.DictReader(p.open()))
+              ok=[r for r in rows if r.get('download_ok','').lower() in {'true','1'}]
+              bad=[r for r in rows if r not in ok]
+              print(json.dumps({'total':len(rows),'ok':len(ok),'failed':[{'slug':r.get('slug'),'error':r.get('errors','')} for r in bad]},indent=2))
+          PY
 
       - name: Write workflow status
         if: always()
