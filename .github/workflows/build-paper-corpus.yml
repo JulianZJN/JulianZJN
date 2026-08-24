@@ -1,0 +1,83 @@
+name: Build KVAF paper structure corpus
+
+on:
+  push:
+    branches:
+      - chatgpt-kvaf-paper-corpus-20260824
+    paths:
+      - .github/workflows/build-paper-corpus.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CORPUS_ROOT: KVAF_Paper_Structure_Corpus_20260824
+  OUT_ZIP: KVAF_Paper_Structure_Corpus_20260824.zip
+  MANIFEST_PATH: papers.json
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout isolated corpus branch
+        uses: actions/checkout@v4
+
+      - name: Install OCR and PDF system tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr poppler-utils
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install extraction dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests pymupdf pymupdf4llm pillow pytesseract
+
+      - name: Decode frozen builder and manifest
+        run: |
+          base64 -d _paper_corpus_job/build_paper_corpus.py.gz.b64 | gunzip > build_paper_corpus.py
+          base64 -d _paper_corpus_job/papers.json.gz.b64 | gunzip > papers.json
+          python -m py_compile build_paper_corpus.py
+          python - <<'PY'
+          import json
+          p=json.load(open('papers.json'))
+          assert len(p)==30, len(p)
+          print('papers:', len(p))
+          PY
+
+      - name: Download, extract, OCR-fallback, render, and analyze
+        run: |
+          set -o pipefail
+          python build_paper_corpus.py 2>&1 | tee build.log
+
+      - name: Write workflow status
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, pathlib, hashlib
+          z=pathlib.Path('KVAF_Paper_Structure_Corpus_20260824.zip')
+          d={'zip_exists':z.exists(),'zip_bytes':z.stat().st_size if z.exists() else 0}
+          if z.exists(): d['sha256']=hashlib.sha256(z.read_bytes()).hexdigest()
+          pathlib.Path('workflow_status.json').write_text(json.dumps(d,indent=2))
+          print(d)
+          PY
+
+      - name: Upload complete corpus ZIP
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: KVAF_Paper_Structure_Corpus_20260824
+          path: |
+            KVAF_Paper_Structure_Corpus_20260824.zip
+            build.log
+            workflow_status.json
+          if-no-files-found: warn
+          compression-level: 0
+          retention-days: 7
