@@ -1,11 +1,12 @@
 name: Build KVAF paper structure corpus
 
 on:
-  push:
+  pull_request:
     branches:
-      - chatgpt-kvaf-paper-corpus-20260824
+      - main
     paths:
       - .github/workflows/build-paper-corpus.yml
+      - _paper_corpus_job/**
   workflow_dispatch:
 
 permissions:
